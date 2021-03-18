@@ -25,6 +25,7 @@
   font-size: 2em;
   font-weight: 500;
   color: #388087;
+  margin-right: -5em;
 }
 
 header {
@@ -35,10 +36,11 @@ header {
   align-items: center;
   position: fixed;
   border-bottom: #388087 1px solid;
-  background-color: #BADFE7;
+  background-color: white;
   width: 100%;
   margin-top: 0;
   margin-bottom: 100px;
+  opacity: 0.9;
 
   }
 
@@ -168,6 +170,11 @@ header .contact:hover {
   padding-top: 3em;
   text-align: center;
   color: #388087;
+  margin-bottom: 3em;
+}
+
+#teamcontainer h1 {
+  margin-bottom: 1.5em;
 }
 
 #team {
@@ -183,18 +190,54 @@ header .contact:hover {
   max-height: 400px;
   min-height: 400px;  
   padding-left: 2em;
-  vertical-align: top;
   cursor: pointer;
 }
 
 #teamcontainer figcaption {
   text-align: center;
-  align-content: center;
+  align-items: center;
   font-weight: 600;
   color: #388087;
   max-width: 300px;
+  padding-top: 1em;
   padding-left: 2em;
 }
+
+/* Location */
+
+#loccontainer {
+  padding-top: 3em;
+  text-align: center;
+  color: #388087;
+}
+
+#loccontainer h1 {
+  margin-bottom: 1.5em;
+}
+
+#location {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+#loccontainer figure img {
+  min-width: 700px;
+  max-width: 700px;
+  min-height: 450px;
+  max-height: 450px;
+  border-radius: 25px;
+
+}
+
+#loccontainer figcaption {
+  text-align: center;
+  align-content: center;
+  font-weight: 600;
+  color: #388087;
+  padding-top: 1em;
+}
+
 
 /* Media queries */
 
@@ -204,7 +247,7 @@ header .contact:hover {
   }
 }
 
-@media only screen and (max-width: 845px) {
+@media only screen and (max-width: 1046px) {
   .logo {
     display: none;
   }
@@ -222,13 +265,13 @@ header .contact:hover {
     margin-top: 0.5em;
   }
 }
-@media only screen and (max-width: 442px) {
+@media only screen and (max-width: 559px) {
   .nav_links {
     font-size: 0.7em;
     margin-top: 0.7em;
 }
 }
-@media only screen and (max-width: 310px) {
+@media only screen and (max-width: 396px) {
   .nav_links li {
     display: block;
     margin-top: 0.5em
@@ -239,5 +282,4 @@ header .contact:hover {
 
   }
 
-  /* header is clipping, come back to this */
 }
